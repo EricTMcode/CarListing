@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		07DD656028F044D500AEC146 /* CarListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD655F28F044D500AEC146 /* CarListApp.swift */; };
-		07DD656228F044D500AEC146 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD656128F044D500AEC146 /* ContentView.swift */; };
+		07DD656228F044D500AEC146 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD656128F044D500AEC146 /* CarList.swift */; };
 		07DD656428F044D600AEC146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD656328F044D600AEC146 /* Assets.xcassets */; };
 		07DD656728F044D600AEC146 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DD656628F044D600AEC146 /* Preview Assets.xcassets */; };
+		07DD657228F0462400AEC146 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DD657128F0462400AEC146 /* car_list.json */; };
+		07DD657428F0482B00AEC146 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657328F0482B00AEC146 /* Car.swift */; };
+		07DD657628F0492200AEC146 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657528F0492200AEC146 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07DD655C28F044D500AEC146 /* CarList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD655F28F044D500AEC146 /* CarListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListApp.swift; sourceTree = "<group>"; };
-		07DD656128F044D500AEC146 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07DD656128F044D500AEC146 /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		07DD656328F044D600AEC146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DD656628F044D600AEC146 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07DD657128F0462400AEC146 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		07DD657328F0482B00AEC146 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		07DD657528F0492200AEC146 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				07DD655F28F044D500AEC146 /* CarListApp.swift */,
-				07DD656128F044D500AEC146 /* ContentView.swift */,
+				07DD657028F0451800AEC146 /* Views */,
+				07DD656F28F0451100AEC146 /* ViewModels */,
+				07DD656E28F0450C00AEC146 /* Models */,
+				07DD656D28F0450400AEC146 /* Ressources */,
 				07DD656328F044D600AEC146 /* Assets.xcassets */,
 				07DD656528F044D600AEC146 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				07DD656628F044D600AEC146 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07DD656D28F0450400AEC146 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				07DD657128F0462400AEC146 /* car_list.json */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		07DD656E28F0450C00AEC146 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07DD657328F0482B00AEC146 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07DD656F28F0451100AEC146 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				07DD657528F0492200AEC146 /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		07DD657028F0451800AEC146 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07DD656128F044D500AEC146 /* CarList.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DD656728F044D600AEC146 /* Preview Assets.xcassets in Resources */,
+				07DD657228F0462400AEC146 /* car_list.json in Resources */,
 				07DD656428F044D600AEC146 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DD656228F044D500AEC146 /* ContentView.swift in Sources */,
+				07DD656228F044D500AEC146 /* CarList.swift in Sources */,
+				07DD657628F0492200AEC146 /* ContentModel.swift in Sources */,
 				07DD656028F044D500AEC146 /* CarListApp.swift in Sources */,
+				07DD657428F0482B00AEC146 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
