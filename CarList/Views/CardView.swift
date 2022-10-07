@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CardView: View {
+    @EnvironmentObject var model: ContentModel
+    
+    @State private var isExpanded: Bool = false
     
     var car: Car
     
@@ -40,7 +43,32 @@ struct CardView: View {
                     Text("$ \(car.customerPrice, format: .number)")
                         .font(.subheadline.bold())
                     
-                    Divider()
+                    VStack(alignment: .leading, spacing: 10) {
+                        
+                        Divider()
+                        
+                        if car.id == model.selectedCar {
+                            CardDetailView(car: car)
+                        }
+                        
+                        Button {
+                            DispatchQueue.main.async {
+                                withAnimation {
+                                    
+                                    if car.id == model.selectedCar {
+                                        model.selectedCar = nil
+                                    } else {
+                                        model.selectedCar = car.id
+                                    }
+                                }
+                            }
+                        } label: {
+                            Text(car.id == model.selectedCar ? "Hide details" : "Show details")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.bottom, 10)
+                    }
                 }
                 .padding(.leading)
             }
@@ -53,5 +81,6 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(car: Car.example)
+            .environmentObject(ContentModel())
     }
 }
