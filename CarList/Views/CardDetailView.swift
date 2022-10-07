@@ -12,12 +12,14 @@ struct CardDetailView: View {
     let car: Car
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
             
             // Add Pros List
             if !car.prosList.isEmpty {
                 Text("Pros:")
-                    .font(.caption.bold())
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                
                 ForEach(car.prosList, id: \.self) { pros in
                     if pros != "" {
                         Text("• \(pros)")
@@ -26,10 +28,13 @@ struct CardDetailView: View {
                 }
             }
             
+            
             // Add Cons List
             if !car.consList.isEmpty {
                 Text("Cons:")
-                    .font(.caption.bold())
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                
                 ForEach(car.consList, id: \.self) { cons in
                     if cons != "" {
                         Text("• \(cons)")
