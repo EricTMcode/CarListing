@@ -11,9 +11,14 @@ class ContentModel: ObservableObject {
     
     @Published var cars = [Car]()
     
+    @Published var selectedCar: UUID?
+    
     init() {
         
         getLocalData()
+        
+        // Define the default selected car for the CarList View
+        selectedCar = cars[0].id
     }
     
     // MARK: - Data method
