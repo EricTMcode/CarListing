@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct CarList: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVStack {
+                ForEach(model.cars) { car in
+                    CardView(car: car)
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 struct CarList_Previews: PreviewProvider {
     static var previews: some View {
         CarList()
+            .environmentObject(ContentModel())
     }
 }

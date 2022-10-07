@@ -12,6 +12,7 @@ struct CarListApp: App {
     var body: some Scene {
         WindowGroup {
             CarList()
+                .environmentObject(ContentModel())
         }
     }
 }
