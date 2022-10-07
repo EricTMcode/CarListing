@@ -15,15 +15,14 @@ struct CardView: View {
     var car: Car
     
     var body: some View {
+        
         ZStack {
-            
-            Rectangle()
-                .foregroundColor(.white)
             
             VStack(alignment: .leading) {
                 Image(car.image)
                     .resizable()
                     .scaledToFit()
+                    
                 
                 HStack(spacing: 1) {
                     Text(car.make)
@@ -72,8 +71,9 @@ struct CardView: View {
                 }
                 .padding(.leading)
             }
-            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color(.gray), lineWidth: 0.3))
-            .cornerRadius(10)
+            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color(.gray), lineWidth: 0.6))
+            .cornerRadius(15)
+            
         }
     }
 }
