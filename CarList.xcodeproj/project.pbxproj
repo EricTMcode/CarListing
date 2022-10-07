@@ -14,6 +14,8 @@
 		07DD657228F0462400AEC146 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DD657128F0462400AEC146 /* car_list.json */; };
 		07DD657428F0482B00AEC146 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657328F0482B00AEC146 /* Car.swift */; };
 		07DD657628F0492200AEC146 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657528F0492200AEC146 /* ContentModel.swift */; };
+		07DD657A28F04CC800AEC146 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657928F04CC800AEC146 /* CardView.swift */; };
+		07DD657C28F04DC000AEC146 /* CarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD657B28F04DC000AEC146 /* CarRating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		07DD657128F0462400AEC146 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
 		07DD657328F0482B00AEC146 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		07DD657528F0492200AEC146 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		07DD657928F04CC800AEC146 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		07DD657B28F04DC000AEC146 /* CarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				07DD656128F044D500AEC146 /* CarList.swift */,
+				07DD657928F04CC800AEC146 /* CardView.swift */,
+				07DD657B28F04DC000AEC146 /* CarRating.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +189,8 @@
 				07DD657628F0492200AEC146 /* ContentModel.swift in Sources */,
 				07DD656028F044D500AEC146 /* CarListApp.swift in Sources */,
 				07DD657428F0482B00AEC146 /* Car.swift in Sources */,
+				07DD657A28F04CC800AEC146 /* CardView.swift in Sources */,
+				07DD657C28F04DC000AEC146 /* CarRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,5 +19,5 @@ struct Car: Identifiable, Codable {
     var rating: Int
     var image: String
     
-    static let example = Car(consList: [""], customerPrice: 12550, make: "Land Rover", marketPrice: 14500, model: "Range Rover", prosList: [""], rating: 4, image: "Tacoma")
+    static let example = Car(consList: [""], customerPrice: 12550, make: "Land Rover", marketPrice: 14500, model: "Range Rover", prosList: [""], rating: 4, image: "Range_Rover")
 }
