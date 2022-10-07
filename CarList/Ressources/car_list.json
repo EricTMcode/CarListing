@@ -4,7 +4,7 @@
         "make":"Land Rover",
         "marketPrice":125000.0,
         "model":"Range Rover",
-        "prosList":["You can go everywhere","Good sound system"],
+        "prosList":["You can go everywhere","Good sound system",],
         "rating":3,
         "image":"Range_Rover"
          
@@ -15,7 +15,7 @@
         "make":"Alpine",
         "marketPrice":225000.0,
         "model":"Roadster",
-        "prosList":["This car is so fast","Jame Bond would love to steal that car","",""],
+        "prosList":["This car is so fast","Jame Bond would love to steal that car",""],
         "rating":4,
         "image":"Alpine_roadster"
         
