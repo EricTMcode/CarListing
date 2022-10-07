@@ -13,7 +13,7 @@ struct CarList: View {
     
     var body: some View {
         ScrollView {
-            LazyVStack {
+            LazyVStack(spacing: 20) {
                 ForEach(model.cars) { car in
                     CardView(car: car)
                 }
