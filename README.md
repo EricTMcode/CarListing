@@ -2,9 +2,9 @@
 From CWC's September Community Challenge
 
 <div>
-  <img src="Screenshots/stage_1/L_01.png" width="300">
-  <img src="Screenshots/stage_2/L_02.png" width="300">
-  <img src="Screenshots/stage_3/L_03.png" width="300">
+  <img src="Screenshots/stage_1/L_01.png" width="200">
+  <img src="Screenshots/stage_2/L_02.png" width="200">
+  <img src="Screenshots/stage_3/L_03.png" width="200">
 </div>
 
 
