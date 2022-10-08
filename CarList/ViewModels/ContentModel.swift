@@ -13,6 +13,8 @@ class ContentModel: ObservableObject {
     
     @Published var selectedCar: UUID?
     
+    @Published var searchText: String = ""
+    
     init() {
         
         getLocalData()
@@ -47,6 +49,17 @@ class ContentModel: ObservableObject {
         catch {
             // Log error
             print("Couldn't parse local data")
+        }
+    }
+    
+    // MARK: - Search Method
+    
+    func searchMake(for search: String) -> [Car] {
+        let search = search.trimmingCharacters(in: .whitespaces)
+        if search.isEmpty { return cars }
+        
+        return cars.filter {
+            $0.make.localizedStandardContains(search) || $0.model.localizedStandardContains(search)
         }
     }
 }

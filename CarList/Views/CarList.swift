@@ -10,15 +10,20 @@ import SwiftUI
 struct CarList: View {
     
     @EnvironmentObject var model: ContentModel
+    @State private var searchMake = ""
     
     var body: some View {
-        ScrollView {
-            LazyVStack(spacing: 20) {
-                ForEach(model.cars) { car in
-                    CardView(car: car)
+        NavigationStack {
+            
+            ScrollView {
+                LazyVStack(spacing: 20) {
+                    ForEach(model.searchMake(for: searchMake)) { car in
+                        CardView(car: car)
+                    }
                 }
+                .padding()
             }
-            .padding()
+            .searchable(text: $searchMake, prompt: "Search make or model")
         }
     }
 }
